@@ -1,4 +1,4 @@
-from src.satellite_sim.satellite import Satellite
+from satellite_sim.satellite import Satellite
 
 
 def test_satellite_initial_state():
