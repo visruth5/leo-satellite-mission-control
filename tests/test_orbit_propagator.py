@@ -40,7 +40,7 @@ def test_propagate_returns_reasonable_leo_state():
     assert isinstance(state, OrbitState)
 
     assert 300.0 < state.altitude_km < 500.0
-    assert 7.0 < sum(v**2 for v in state.velocity_km_s) ** 0.5 < 8.5
+    assert 7.0 < sum(v**2 for v in state.velocity_gcrs_km_s) ** 0.5 < 8.5
 
     assert -90.0 <= state.latitude_deg <= 90.0
     assert -180.0 <= state.longitude_deg <= 180.0

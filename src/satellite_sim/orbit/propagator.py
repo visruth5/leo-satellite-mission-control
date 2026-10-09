@@ -26,8 +26,8 @@ class TLEOrbitPropagator:
         geographic = wgs84.geographic_position_of(geocentric)
 
         return OrbitState(
-            position_km=tuple(float(x) for x in geocentric.xyz.km),
-            velocity_km_s=tuple(
+            position_gcrs_km=tuple(float(x) for x in geocentric.xyz.km),
+            velocity_gcrs_km_s=tuple(
                 float(v) for v in geocentric.velocity.km_per_s
             ),
             latitude_deg=float(geographic.latitude.degrees),
