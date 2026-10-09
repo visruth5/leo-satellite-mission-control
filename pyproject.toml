@@ -7,6 +7,9 @@ name = "leo-satellite-mission-control"
 version = "0.1.0"
 description = "LEO satellite simulation and mission-control software platform"
 requires-python = ">=3.12"
+dependencies = [
+    "skyfield>=1.55,<2.0",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
