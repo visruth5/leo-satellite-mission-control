@@ -1,4 +1,5 @@
 from datetime import datetime, timezone
+
 import pytest
 
 from satellite_sim.orbit.propagator import TLEOrbitPropagator
